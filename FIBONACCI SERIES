@@ -1,0 +1,14 @@
+def a(i):
+    if i==0:
+        return 0
+    if i==1:
+        return 1
+    else:
+        return (a(i-2)+a(i-1))
+
+def b(n):
+    for i in range(n):
+        print(a(i),end=" ")
+
+
+b(8)
