@@ -1,0 +1,11 @@
+n=int(input("ENTER 1st NUMBER :"))
+m=int(input("ENTER 2rd NUMBER :"))
+l=int(input("ENTER 3rd NUMBER :"))
+big=max([n,m,l])
+step=big
+while(True):
+    if big%n==0 and big%m==0 and big%l==0:
+        break
+    else:
+        big=big+step
+print(big)
